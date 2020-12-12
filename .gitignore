@@ -1,0 +1,8 @@
+/node_modules
+/test
+
+yarn-error.log*
+*.png
+*.jpg
+*.jpeg
+*.ico
