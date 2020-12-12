@@ -1,15 +1,26 @@
 {
 	"name": "ascii-converter",
+	"description": "A command line interface to convert images into ASCII art",
 	"version": "1.0.0",
 	"main": "index.js",
 	"author": "ElCholoGamer <josedanielgrayson@gmail.com>",
 	"license": "MIT",
 	"private": true,
-	"dependencies": {
-		"canvas": "^2.6.1",
-		"sharp": "^0.26.3"
+	"bugs": {
+		"url": "https://github.com/ElCholoGamer/ascii-converter/issues"
 	},
-	"devDependencies": {
-		"@types/sharp": "^0.26.1"
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/ElCholoGamer/ascii-converter"
+	},
+	"homepage": "https://github.com/ElCholoGamer/ascii-converter#readme",
+	"keywords": [
+		"ascii",
+		"image",
+		"cli",
+		"canvas"
+	],
+	"dependencies": {
+		"canvas": "^2.6.1"
 	}
 }
