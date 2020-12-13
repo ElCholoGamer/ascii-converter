@@ -2,7 +2,7 @@
 	"name": "ascii-converter",
 	"description": "Convert images to high-quality ASCII art",
 	"version": "1.0.0",
-	"main": "index.js",
+	"main": "./dist/index.js",
 	"author": "ElCholoGamer <josedanielgrayson@gmail.com>",
 	"license": "MIT",
 	"private": true,
