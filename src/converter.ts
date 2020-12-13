@@ -1,5 +1,5 @@
 import { createCanvas, loadImage } from 'canvas';
-import ConvertOptions from './options';
+import ConvertOptions, { defaultOptions } from './options';
 
 /**
  * Converts the given image path or buffer
@@ -15,12 +15,10 @@ async function convertToASCII(
 	const image = await loadImage(src);
 
 	// Get passed options
-	let {
-		grayScale = '',
-		spaceChars = 0,
-		width = image.width,
-		height = image.height,
-	} = options;
+	let { grayScale, spaceChars, width = image.width, height = image.height } = {
+		...defaultOptions,
+		...options,
+	};
 
 	// Validate options
 	width = Math.max(width, 1);

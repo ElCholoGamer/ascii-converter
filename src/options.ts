@@ -29,4 +29,19 @@ interface ConvertOptions {
 	grayScale?: string | string[];
 }
 
+interface IDefaultOptions extends ConvertOptions {
+	spaceChars: number;
+	grayScale: string;
+}
+
+/**
+ * Default values to be provided
+ * when converting an image to
+ * ASCII text, if not present.
+ */
+export const defaultOptions: IDefaultOptions = {
+	spaceChars: 0,
+	grayScale: ' .:-=+*#%@',
+};
+
 export default ConvertOptions;
