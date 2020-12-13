@@ -2,7 +2,7 @@ import { createCanvas, loadImage } from 'canvas';
 import ConvertOptions from './options';
 
 /**
- * Converts the given image path of buffer
+ * Converts the given image path or buffer
  * to an ASCII text string.
  * @param src The image path or buffer
  * @param options Options for the image conversion
