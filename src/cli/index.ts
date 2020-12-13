@@ -7,7 +7,6 @@ import { normalize } from 'path';
 import convertToASCII from '../';
 import { askFile, askFinalAction, askOptions } from './inquirer';
 import { readAllFiles } from './files';
-import { Spinner } from 'clui';
 
 console.clear();
 console.log(chalk.yellow(figlet.textSync('ASCII Converter')));
@@ -29,16 +28,9 @@ console.log(chalk.yellow(figlet.textSync('ASCII Converter')));
 	// Ask for options
 	const options = await askOptions(image);
 
-	// Show status spinner
-	const status = new Spinner('Converting image...');
-	status.start();
-
 	try {
 		// Convert image to ASCII text
 		const ascii = await convertToASCII(normalize(file), options);
-
-		// Done messages
-		status.stop();
 		console.log(chalk.green.bold('Done!'));
 
 		// Save results and show path
