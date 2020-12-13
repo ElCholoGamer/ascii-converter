@@ -1,0 +1,17 @@
+{
+	"compilerOptions": {
+		"module": "CommonJS",
+		"target": "ES5",
+		"allowJs": true,
+		"skipLibCheck": true,
+		"strict": true,
+		"strictNullChecks": true,
+		"noImplicitAny": true,
+		"resolveJsonModule": true,
+		"esModuleInterop": true,
+		"outDir": "dist",
+		"declaration": true
+	},
+	"include": ["src"],
+	"exclude": ["node_modules", "dist"]
+}
