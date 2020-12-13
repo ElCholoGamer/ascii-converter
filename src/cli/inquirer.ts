@@ -130,11 +130,11 @@ export async function askFinalAction(ascii: string, filename: string) {
 				type: 'input',
 				name: 'fontSize',
 				message: "Insert the document's font size:",
-				validate: validateSize(1),
+				validate: (s: string) => s.trim().length > 0 || 'Invalid font size',
 				default: 3,
 			});
 
-			return await writeTemplate(ascii, filename, fontSize);
+			return await writeTemplate(ascii, filename, fontSize.trim());
 		case 1:
 			// Text file
 			return await writeTextFile(ascii);
