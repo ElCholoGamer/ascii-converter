@@ -14,12 +14,18 @@ async function convertToASCII(
 	const image = await loadImage(src);
 
 	// Get passed options
-	const {
-		grayScale = ' .:-=+*#%@',
+	let {
+		grayScale,
 		spaceChars = 0,
 		width = image.width,
 		height = image.height,
 	} = options;
+
+	// Validate options
+	width = Math.max(width, 1);
+	height = Math.max(height, 1);
+	grayScale = grayScale || ' .:-=+*#%@';
+	spaceChars = Math.max(spaceChars, 0);
 
 	// Create canvas
 	const canvas = createCanvas(width, height);
