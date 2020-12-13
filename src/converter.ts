@@ -5,7 +5,8 @@ import ConvertOptions from './options';
  * Converts the given image path of buffer
  * to an ASCII text string.
  * @param src The image path or buffer
- * @param options Options for the conversion
+ * @param options Options for the image conversion
+ * @returns A promise that, when fulfilled, returns the image as ASCII text.
  */
 async function convertToASCII(
 	src: string | Buffer,
