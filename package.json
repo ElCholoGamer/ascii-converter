@@ -2,8 +2,8 @@
 	"name": "ascii-converter",
 	"description": "Convert images to high-quality ASCII art",
 	"version": "1.1.0",
-	"main": "./dist/index.js",
-	"types": "./dist/index.d.ts",
+	"main": "dist/index.js",
+	"types": "dist/index.d.ts",
 	"author": "ElCholoGamer <josedanielgrayson@gmail.com>",
 	"license": "MIT",
 	"scripts": {

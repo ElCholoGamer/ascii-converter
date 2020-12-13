@@ -2,8 +2,6 @@
 	"compilerOptions": {
 		"module": "CommonJS",
 		"target": "ES5",
-		"allowJs": true,
-		"skipLibCheck": true,
 		"strict": true,
 		"strictNullChecks": true,
 		"noImplicitAny": true,
@@ -14,6 +12,5 @@
 	"ts-node": {
 		"transpileOnly": true
 	},
-	"include": ["src"],
-	"exclude": ["node_modules", "dist"]
+	"include": ["src"]
 }
