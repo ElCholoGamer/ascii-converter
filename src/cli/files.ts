@@ -30,7 +30,7 @@ export async function writeTemplate(
 	title: string,
 	fontSize: string
 ) {
-	const templatePath = join(__dirname, '../../template.html');
+	const templatePath = join(__dirname, '../../assets/template.html');
 	if (!existsSync(templatePath)) {
 		return chalk.red('The template file was not found!');
 	}
