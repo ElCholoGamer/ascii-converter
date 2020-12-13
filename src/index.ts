@@ -1,2 +1,2 @@
-export { default } from './convert';
+export { default } from './converter';
 export { default as ConvertOptions } from './options';
