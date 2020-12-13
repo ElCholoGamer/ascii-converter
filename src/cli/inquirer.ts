@@ -1,9 +1,7 @@
 import { Image } from 'canvas';
-import chalk from 'chalk';
 import { existsSync } from 'fs';
-import { readFile } from 'fs/promises';
 import inquirer, { QuestionCollection } from 'inquirer';
-import { join, normalize } from 'path';
+import { normalize } from 'path';
 import { ConvertOptions } from '../';
 import { defaultOptions } from '../options';
 import { writeTemplate, writeTextFile } from './files';
@@ -131,7 +129,7 @@ export async function askFinalAction(ascii: string, filename: string) {
 				name: 'fontSize',
 				message: "Insert the document's font size:",
 				validate: (s: string) => s.trim().length > 0 || 'Invalid font size',
-				default: 3,
+				default: '3',
 			});
 
 			return await writeTemplate(ascii, filename, fontSize.trim());
