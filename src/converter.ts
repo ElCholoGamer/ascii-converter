@@ -65,7 +65,7 @@ async function convertToASCII(
 
 	const lines = rows.map(row =>
 		row.reduce(
-			(acc, val) => acc + grayScale[Math.floor(val * (grayScale.length - 1))],
+			(acc, val) => acc + grayScale[Math.round(val * (grayScale.length - 1))],
 			''
 		)
 	);
