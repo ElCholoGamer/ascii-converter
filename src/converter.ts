@@ -15,7 +15,7 @@ async function convertToASCII(
 
 	// Get passed options
 	let {
-		grayScale,
+		grayScale = '',
 		spaceChars = 0,
 		width = image.width,
 		height = image.height,
