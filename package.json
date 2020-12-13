@@ -1,6 +1,6 @@
 {
 	"name": "ascii-converter",
-	"description": "A command line interface to convert images into ASCII art",
+	"description": "Convert images to high-quality ASCII art",
 	"version": "1.0.0",
 	"main": "index.js",
 	"author": "ElCholoGamer <josedanielgrayson@gmail.com>",
