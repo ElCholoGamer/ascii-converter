@@ -15,6 +15,7 @@ export async function askFile(choices: string[]) {
 		name: 'file',
 		type: 'list',
 		choices,
+		loop: false,
 		message: 'Select an image to convert:',
 	});
 
