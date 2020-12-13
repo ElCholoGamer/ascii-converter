@@ -11,6 +11,9 @@
 		"outDir": "dist",
 		"declaration": true
 	},
+	"ts-node": {
+		"transpileOnly": true
+	},
 	"include": ["src"],
 	"exclude": ["node_modules", "dist"]
 }
