@@ -1,0 +1,4 @@
+.github/
+
+tsconfig.json
+yarn-error.log*

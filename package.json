@@ -25,10 +25,6 @@
 		"cli",
 		"canvas"
 	],
-	"files": [
-		"dist/**/*",
-		"template.html"
-	],
 	"dependencies": {
 		"canvas": "^2.6.1",
 		"chalk": "^4.1.0",
