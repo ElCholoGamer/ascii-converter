@@ -61,16 +61,14 @@ async function convertToASCII(
 		rows.push(pixels.slice(i, i + width));
 	}
 
-	const lines = rows.map(row =>
-		row.reduce(
-			(acc, val) => acc + grayScale[Math.round(val * (grayScale.length - 1))],
-			''
+	const text = rows
+		.map(row =>
+			row
+				.map(value => grayScale[Math.round(value * (grayScale.length - 1))])
+				.join(' '.repeat(spaceChars))
 		)
-	);
-
-	const text = lines
-		.map(line => line.split('').join(' '.repeat(spaceChars)))
 		.join('\n');
+
 	return text;
 }
 
