@@ -37,13 +37,6 @@ const validateSize = (minValue: number) => (str: string) => {
 	return (!isNaN(num) && num >= minValue) || 'Invalid number';
 };
 
-interface OptionAnswers {
-	spaceChars: string;
-	grayScale: string;
-	width: string;
-	height: string;
-}
-
 export async function askOptions(
 	image: Image
 ): Promise<ConvertOptions | undefined> {
@@ -55,7 +48,7 @@ export async function askOptions(
 
 	if (!useCustom) return undefined;
 
-	const questions: QuestionCollection<OptionAnswers> = [
+	const questions: QuestionCollection = [
 		{
 			name: 'spaceChars',
 			type: 'input',
